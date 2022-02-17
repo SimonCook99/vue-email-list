@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mail generator</title>
+</head>
+<body>
+    
+    <div id="root">
+
+        <!--mostro la lista delle mail ciclate, solo quando la lunghezza raggiunge i 10 valori-->
+        <ul v-for="mail in listaMail">
+            <li v-if="listaMail.length == 10">{{mail}}</li>
+        </ul>
+
+    </div>
+
+
+    <!--CDN Axios-->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!--CDN Vue-->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+
+    <script type="text/javascript" src="main.js"></script>
+</body>
+</html>
